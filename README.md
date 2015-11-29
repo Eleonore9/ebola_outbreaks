@@ -16,14 +16,11 @@ See [here](https://data.hdx.rwlabs.org/dataset/ebola-outbreaks-before-2014)
 ####Tools:
 Python, Jupyter notebook, Pandas, GeoPy + cartodb
 
-####Cleaning:
+####Fixing/adding info:
 
 * Get the date range into a start date and en date. [Notebook](https://github.com/Eleonore9/ebola_outbreaks/blob/master/1_format_dates_add_duration.ipynb)
 
 * Get countries 2 letters ISO code. [Notebook](https://github.com/Eleonore9/ebola_outbreaks/blob/master/2_add_iso_countries_codes.ipynb)
-
-
-####Adding data:
 
 * Add coordinates using GeoPy. [Notebook](https://github.com/Eleonore9/ebola_outbreaks/blob/master/3_add_coordinates.ipynb)
 
