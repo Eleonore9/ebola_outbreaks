@@ -28,6 +28,6 @@ Python, Jupyter notebook, Pandas, GeoPy + cartodb
 
 
 ####Analysis:
-* Geocoding + plotting with GeoPy and Geoplotlib. [Notebook](https://github.com/Eleonore9/ebola_outbreaks/blob/master/test_geopy_geoplotlib.ipynb)
+* Geocoding with GeoPy + plotting with Geoplotlib and Folium. [Notebook](https://github.com/Eleonore9/ebola_outbreaks/blob/master/geopy_geoplotlib_folium.ipynb)
 
 
