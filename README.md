@@ -14,7 +14,7 @@ See [here](https://data.hdx.rwlabs.org/dataset/ebola-outbreaks-before-2014)
 
 
 ####Tools:
-Python, Jupyter notebook, Pandas, GeoPy + cartodb
+Python, Jupyter notebook, Pandas, GeoPandas, GeoPy + cartodb
 
 ####Fixing/adding info:
 
