@@ -9,9 +9,9 @@ See [here](https://data.hdx.rwlabs.org/dataset/ebola-outbreaks-before-2014)
 
 #### Visualisation:
 
-* Exploring the data set with Pandas and Bokeh. [Notebook](https://nbviewer.jupyter.org/github/Eleonore9/ebola_outbreaks/blob/master/6_exploring_the_dataset.ipynb)
+* Exploring the data set with Pandas and Bokeh. [Notebook1](https://nbviewer.jupyter.org/github/Eleonore9/ebola_outbreaks/blob/master/6_exploring_the_dataset.ipynb), [Notebook2](https://nbviewer.jupyter.org/github/Eleonore9/ebola_outbreaks/blob/master/index.ipynb)
 
-![bokeh-plot](img/ebola_outbreaks_bokeh_chart.png)
+![bokeh-plot](img/ebola_victims.png)
 
 
 
@@ -36,5 +36,3 @@ Python, Jupyter notebook, Pandas, GeoPandas, GeoPy + cartodb
 
 #### Other:
 * Geocoding with GeoPy + plotting with Geoplotlib and Folium. [Notebook](https://nbviewer.jupyter.org/github/Eleonore9/ebola_outbreaks/blob/master/geopy_geoplotlib_folium.ipynb)
-
-

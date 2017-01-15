@@ -1,4 +1,4 @@
-FROM Eleonore9/binder-base
+FROM andrewosh/binder-base
 
 MAINTAINER Eleonore Mayola
 
