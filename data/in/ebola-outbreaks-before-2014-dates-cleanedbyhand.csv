@@ -1,0 +1,34 @@
+,Start_Datetime,End_Datetime,Duration (days),Country,country_code_iso_2_digits,Ebola subtype,Reported number of human cases,Reported number of deaths among cases,Reported % of deaths among cases
+0,01/11/12 00:00,31/01/13 00:00,91,Uganda,UG,Sudan virus,6,3,0.5
+1,01/06/12 00:00,30/11/12 00:00,182,Democratic Republic of the Congo,CD,Bundibugyo virus,36,13,0.361
+2,01/06/12 00:00,31/10/12 00:00,152,Uganda,UG,Sudan virus,11,4,0.364
+3,01/05/11 00:00,01/05/11 00:00,0,Uganda,UG,Sudan virus,1,1,1
+4,01/12/08 00:00,28/02/09 00:00,89,Democratic Republic of the Congo,CD,Zaire virus,32,15,0.47
+5,01/11/08 00:00,01/11/08 00:00,0,Philippines,PH,Reston virus,6,0,0
+6,01/12/07 00:00,31/01/08 00:00,61,Uganda,UG,Bundibugyo virus,149,37,0.25
+7,01/01/07 00:00,31/12/07 00:00,364,Democratic Republic of the Congo,CD,Zaire virus,264,187,0.71
+8,01/01/04 00:00,31/12/04 00:00,365,Russia,RU,Zaire virus,1,1,1
+9,01/01/04 00:00,31/12/04 00:00,365,Sudan (South Sudan),SD,Sudan virus,17,7,0.41
+10,01/11/03 00:00,31/12/03 00:00,60,Republic of the Congo,CG,Zaire virus,35,29,0.83
+11,01/12/02 00:00,30/04/03 00:00,150,Republic of the Congo,CG,Zaire virus,143,128,0.89
+12,01/10/01 00:00,31/03/02 00:00,181,Republic of the Congo,CG,Zaire virus,57,43,0.75
+13,01/10/01 00:00,31/03/02 00:00,181,Gabon,GA,Zaire virus,65,53,0.82
+14,01/01/00 00:00,31/12/01 00:00,730,Uganda,UG,Sudan virus,425,224,0.53
+15,01/01/96 00:00,31/12/96 00:00,365,Russia,RU,Zaire virus,1,1,1
+16,01/01/96 00:00,31/12/96 00:00,365,Philippines,PH,Reston virus,0,0,0
+17,01/01/96 00:00,31/12/96 00:00,365,USA,US,Reston virus,0,0,0
+18,01/01/96 00:00,31/12/96 00:00,365,South Africa,ZA,Zaire virus,2,1,0.5
+19,01/07/96 00:00,31/01/97 00:00,214,Gabon,GA,Zaire virus,60,45,0.74
+20,01/01/96 00:00,30/04/96 00:00,120,Gabon,GA,Zaire virus,37,21,0.57
+21,01/01/95 00:00,31/12/95 00:00,364,Democratic Republic of the Congo,CD,Zaire virus,315,250,0.81
+22,01/01/94 00:00,31/12/94 00:00,364,Côte d'Ivoire (Ivory Coast),CI,Taï Forest virus,1,0,0
+23,01/01/94 00:00,31/12/94 00:00,364,Gabon,GA,Zaire virus,52,31,0.6
+24,01/01/92 00:00,31/12/92 00:00,365,Italy,IT,Reston virus,0,0,0
+25,01/01/89 00:00,31/12/90 00:00,729,Philippines,PH,Reston virus,3,0,0
+26,01/01/90 00:00,31/12/90 00:00,364,USA,US,Reston virus,4,0,0
+27,01/01/89 00:00,31/12/89 00:00,364,USA,US,Reston virus,0,0,0
+28,01/01/79 00:00,31/12/79 00:00,364,Sudan (South Sudan),SD,Sudan virus,34,22,0.65
+29,01/01/77 00:00,31/12/77 00:00,364,Democratic Republic of the Congo,CD,Zaire virus,1,1,1
+30,01/01/76 00:00,31/12/76 00:00,365,England,GB,Sudan virus,1,0,0
+31,01/01/76 00:00,31/12/76 00:00,365,Sudan (South Sudan),SD,Sudan virus,284,151,0.53
+32,01/01/76 00:00,31/12/76 00:00,365,Democratic Republic of the Congo,CD,Zaire virus,318,280,0.88
