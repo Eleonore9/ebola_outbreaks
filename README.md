@@ -1,5 +1,6 @@
 ## Humanitarian data analysis - Ebola outbreaks
 
+Notebook hosted on Binder -> [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org:/repo/eleonore9/ebola_outbreaks/)
 
 #### Data source:
 
