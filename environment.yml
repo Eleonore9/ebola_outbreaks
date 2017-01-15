@@ -1,0 +1,15 @@
+name: ebola_outbreaks
+
+dependencies:
+  - python=2.7
+  - numpy
+  - pandas
+  - matplotlib
+  - fiona
+  - Shapely
+  - descartes
+  - geopandas
+  - folium
+  - pyshp
+  - Flask
+  - bokeh
