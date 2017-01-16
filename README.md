@@ -1,6 +1,7 @@
 ## Humanitarian data analysis - Ebola outbreaks
 
 Notebook hosted on Binder -> [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org:/repo/eleonore9/ebola_outbreaks/)
+Running the notebooks saves the interactive plots on binder's server
 
 #### Data source:
 
@@ -13,7 +14,6 @@ See [here](https://data.hdx.rwlabs.org/dataset/ebola-outbreaks-before-2014)
 * Exploring the data set with Pandas and Bokeh. [Notebook1](https://nbviewer.jupyter.org/github/Eleonore9/ebola_outbreaks/blob/master/6_exploring_the_dataset.ipynb), [Notebook2](https://nbviewer.jupyter.org/github/Eleonore9/ebola_outbreaks/blob/master/index.ipynb)
 
 ![bokeh-plot](img/ebola_victims.png)
-
 
 
 * [Cartodb map](https://eleo.cartodb.com/viz/eb27aace-9475-11e5-b6d6-0ecd1babdde5/public_map)
