@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+  <title>Ebola outbreaks before 2014</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+   <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vega/3.0.1/vega.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vega-lite/2.0.0-beta.15/vega-lite.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vega-embed/3.0.0-beta.20/vega-embed.js"></script>
+  <style media="screen">
+    /* Add space between vega-embed links  */
+    .vega-actions a {
+      margin-right: 5px;
+    }
+    #vis1, #vis2, #vis3 {
+     float: left;
+     width: 430px;
+    }
+    .lower {
+      clear: both;
+      margin-bottom: 25px;
+    }
+    .upper {
+      margin-bottom: 20px;
+    }
+    .header {
+      margin-bottom: 25px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+   <div class="header clearfix">
+   <nav>
+    <ul class="nav nav-pills float-right">
+     <li class="nav-item">Check the code on <a href="https://github.com/Eleonore9/ebola_outbreaks">Github</a></li>
+    </ul>
+   </nav>
+   <h3 class="text-muted">Telling stories with data</h3>
+   </div>
+   <h2>Ebola outbreaks before 2014</h2>
+   <div class="col upper"><h5>We all have vivid memory of the last Ebola outbreak.<br>
+   By looking at the 33 previous events since 1976, what can we learn to understand this event and formulate ideas to prevent future outbreaks?</h5></div>
+    <div class="jumbotron">
+     <!-- Container for the visualization -->
+     <div id="vis1"></div>
+     <div id="vis2"></div>
+     <div id="vis3"></div>
+     <div id="vis4"></div>
+   </div>
+   <div class="col lower">
+     <div class="row"><h5>The most impacted countries before 2014 were DRC, Gabon, Sudan and Uganda (natural reservoirs of the virus hosts)<br>
+	 The virus subtype linked to the most outbreaks and cases/deaths in the past is the Zaire virus. This can be tied to the recent tragic outbreak in West Africa also due to a Zaire virus subtype.<br>
+     The severity of the last outbreak in a different area of Africa brings a few questions to mind. Is the reservoir of virus hosts moving/expanding? Is the severity due to an increased virulence of the Zaire subtype or to a delayed emergency response.</h5></div>
+    <div class="row">Done using <a href="http://altair-viz.github.io/"> Altair </a> and <a href="https://vega.github.io/vega-lite/"> Vega-Lite </a> with data from <a href="https://data.hdx.rwlabs.org/dataset/ebola-outbreaks-before-2014"> HDX</a>.<br></div>
+   </div>
+  </div>
+  <script>
+   var data = {"values": [{"Reported number of deaths among cases": 3, "Reported % of deaths among cases": 0.5, "Country name": "Uganda", "Reported number of human cases": 6, "Ebola subtype": "Sudan virus", "End date": "2013-01-31", "Start date": "2012-11-01", "Duration (days)": 91}, {"Reported number of deaths among cases": 13, "Reported % of deaths among cases": 0.361, "Country name": "Democratic Republic of the Congo", "Reported number of human cases": 36, "Ebola subtype": "Bundibugyo virus", "End date": "2012-11-30", "Start date": "2012-06-01", "Duration (days)": 182}, {"Reported number of deaths among cases": 4, "Reported % of deaths among cases": 0.364, "Country name": "Uganda", "Reported number of human cases": 11, "Ebola subtype": "Sudan virus", "End date": "2012-10-31", "Start date": "2012-06-01", "Duration (days)": 152}, {"Reported number of deaths among cases": 1, "Reported % of deaths among cases": 1.0, "Country name": "Uganda", "Reported number of human cases": 1, "Ebola subtype": "Sudan virus", "End date": "2011-05-01", "Start date": "2011-05-01", "Duration (days)": 0}, {"Reported number of deaths among cases": 15, "Reported % of deaths among cases": 0.47, "Country name": "Democratic Republic of the Congo", "Reported number of human cases": 32, "Ebola subtype": "Zaire virus", "End date": "2009-02-28", "Start date": "2008-12-01", "Duration (days)": 89}, {"Reported number of deaths among cases": 0, "Reported % of deaths among cases": 0.0, "Country name": "Philippines", "Reported number of human cases": 6, "Ebola subtype": "Reston virus", "End date": "2008-11-01", "Start date": "2008-11-01", "Duration (days)": 0}, {"Reported number of deaths among cases": 37, "Reported % of deaths among cases": 0.25, "Country name": "Uganda", "Reported number of human cases": 149, "Ebola subtype": "Bundibugyo virus", "End date": "2008-01-31", "Start date": "2007-12-01", "Duration (days)": 61}, {"Reported number of deaths among cases": 187, "Reported % of deaths among cases": 0.71, "Country name": "Democratic Republic of the Congo", "Reported number of human cases": 264, "Ebola subtype": "Zaire virus", "End date": "2007-12-31", "Start date": "2007-01-01", "Duration (days)": 364}, {"Reported number of deaths among cases": 1, "Reported % of deaths among cases": 1.0, "Country name": "Russia", "Reported number of human cases": 1, "Ebola subtype": "Zaire virus", "End date": "2004-12-31", "Start date": "2004-01-01", "Duration (days)": 365}, {"Reported number of deaths among cases": 7, "Reported % of deaths among cases": 0.41, "Country name": "Sudan (South Sudan)", "Reported number of human cases": 17, "Ebola subtype": "Sudan virus", "End date": "2004-12-31", "Start date": "2004-01-01", "Duration (days)": 365}, {"Reported number of deaths among cases": 29, "Reported % of deaths among cases": 0.83, "Country name": "Democratic Republic of the Congo", "Reported number of human cases": 35, "Ebola subtype": "Zaire virus", "End date": "2003-12-31", "Start date": "2003-11-01", "Duration (days)": 60}, {"Reported number of deaths among cases": 128, "Reported % of deaths among cases": 0.89, "Country name": "Democratic Republic of the Congo", "Reported number of human cases": 143, "Ebola subtype": "Zaire virus", "End date": "2003-04-30", "Start date": "2002-12-01", "Duration (days)": 150}, {"Reported number of deaths among cases": 43, "Reported % of deaths among cases": 0.75, "Country name": "Democratic Republic of the Congo", "Reported number of human cases": 57, "Ebola subtype": "Zaire virus", "End date": "2002-03-31", "Start date": "2001-10-01", "Duration (days)": 181}, {"Reported number of deaths among cases": 53, "Reported % of deaths among cases": 0.82, "Country name": "Gabon", "Reported number of human cases": 65, "Ebola subtype": "Zaire virus", "End date": "2002-03-31", "Start date": "2001-10-01", "Duration (days)": 181}, {"Reported number of deaths among cases": 224, "Reported % of deaths among cases": 0.53, "Country name": "Uganda", "Reported number of human cases": 425, "Ebola subtype": "Sudan virus", "End date": "2001-12-31", "Start date": "2000-01-01", "Duration (days)": 730}, {"Reported number of deaths among cases": 1, "Reported % of deaths among cases": 1.0, "Country name": "Russia", "Reported number of human cases": 1, "Ebola subtype": "Zaire virus", "End date": "1996-12-31", "Start date": "1996-01-01", "Duration (days)": 365}, {"Reported number of deaths among cases": 0, "Reported % of deaths among cases": 0.0, "Country name": "Philippines", "Reported number of human cases": 0, "Ebola subtype": "Reston virus", "End date": "1996-12-31", "Start date": "1996-01-01", "Duration (days)": 365}, {"Reported number of deaths among cases": 0, "Reported % of deaths among cases": 0.0, "Country name": "USA", "Reported number of human cases": 0, "Ebola subtype": "Reston virus", "End date": "1996-12-31", "Start date": "1996-01-01", "Duration (days)": 365}, {"Reported number of deaths among cases": 1, "Reported % of deaths among cases": 0.5, "Country name": "South Africa", "Reported number of human cases": 2, "Ebola subtype": "Zaire virus", "End date": "1996-12-31", "Start date": "1996-01-01", "Duration (days)": 365}, {"Reported number of deaths among cases": 45, "Reported % of deaths among cases": 0.74, "Country name": "Gabon", "Reported number of human cases": 60, "Ebola subtype": "Zaire virus", "End date": "1997-01-31", "Start date": "1996-07-01", "Duration (days)": 214}, {"Reported number of deaths among cases": 21, "Reported % of deaths among cases": 0.57, "Country name": "Gabon", "Reported number of human cases": 37, "Ebola subtype": "Zaire virus", "End date": "1996-04-30", "Start date": "1996-01-01", "Duration (days)": 120}, {"Reported number of deaths among cases": 250, "Reported % of deaths among cases": 0.81, "Country name": "Democratic Republic of the Congo", "Reported number of human cases": 315, "Ebola subtype": "Zaire virus", "End date": "1995-12-31", "Start date": "1995-01-01", "Duration (days)": 364}, {"Reported number of deaths among cases": 0, "Reported % of deaths among cases": 0.0, "Country name": "C\u00f4te d'Ivoire (Ivory Coast)", "Reported number of human cases": 1, "Ebola subtype": "Ta\u00ef Forest virus", "End date": "1994-12-31", "Start date": "1994-01-01", "Duration (days)": 364}, {"Reported number of deaths among cases": 31, "Reported % of deaths among cases": 0.6, "Country name": "Gabon", "Reported number of human cases": 52, "Ebola subtype": "Zaire virus", "End date": "1994-12-31", "Start date": "1994-01-01", "Duration (days)": 364}, {"Reported number of deaths among cases": 0, "Reported % of deaths among cases": 0.0, "Country name": "Italy", "Reported number of human cases": 0, "Ebola subtype": "Reston virus", "End date": "1992-12-31", "Start date": "1992-01-01", "Duration (days)": 365}, {"Reported number of deaths among cases": 0, "Reported % of deaths among cases": 0.0, "Country name": "Philippines", "Reported number of human cases": 3, "Ebola subtype": "Reston virus", "End date": "1990-12-31", "Start date": "1989-01-01", "Duration (days)": 729}, {"Reported number of deaths among cases": 0, "Reported % of deaths among cases": 0.0, "Country name": "USA", "Reported number of human cases": 4, "Ebola subtype": "Reston virus", "End date": "1990-12-31", "Start date": "1990-01-01", "Duration (days)": 364}, {"Reported number of deaths among cases": 0, "Reported % of deaths among cases": 0.0, "Country name": "USA", "Reported number of human cases": 0, "Ebola subtype": "Reston virus", "End date": "1989-12-31", "Start date": "1989-01-01", "Duration (days)": 364}, {"Reported number of deaths among cases": 22, "Reported % of deaths among cases": 0.65, "Country name": "Sudan (South Sudan)", "Reported number of human cases": 34, "Ebola subtype": "Sudan virus", "End date": "1979-12-31", "Start date": "1979-01-01", "Duration (days)": 364}, {"Reported number of deaths among cases": 1, "Reported % of deaths among cases": 1.0, "Country name": "Democratic Republic of the Congo", "Reported number of human cases": 1, "Ebola subtype": "Zaire virus", "End date": "1977-12-31", "Start date": "1977-01-01", "Duration (days)": 364}, {"Reported number of deaths among cases": 0, "Reported % of deaths among cases": 0.0, "Country name": "England", "Reported number of human cases": 1, "Ebola subtype": "Sudan virus", "End date": "1976-12-31", "Start date": "1976-01-01", "Duration (days)": 365}, {"Reported number of deaths among cases": 151, "Reported % of deaths among cases": 0.53, "Country name": "Sudan (South Sudan)", "Reported number of human cases": 284, "Ebola subtype": "Sudan virus", "End date": "1976-12-31", "Start date": "1976-01-01", "Duration (days)": 365}, {"Reported number of deaths among cases": 280, "Reported % of deaths among cases": 0.88, "Country name": "Democratic Republic of the Congo", "Reported number of human cases": 318, "Ebola subtype": "Zaire virus", "End date": "1976-12-31", "Start date": "1976-01-01", "Duration (days)": 365}]};
+
+    var plot1 = {"data": data, "mark": "bar", "$schema": "https://vega.github.io/schema/vega-lite/v2.0.json", "encoding": {"y": {"type": "ordinal", "field": "Country name"}, "x": {"axis": {"title": "Number of outbreaks"}, "aggregate": "count", "type": "quantitative", "field": "*"}}, "description": "A simple bar chart with embedded data.", "selection": {"brush": {"type": "interval"}}};
+
+    var plot2 = {"data": data, "mark": "bar", "$schema": "https://vega.github.io/schema/vega-lite/v2.0.json", "encoding": {"y": {"type": "nominal", "field": "Country name"}, "color": {"type": "nominal", "field": "Country name"}, "x2": {"type": "temporal", "field": "End date"}, "x": {"axis": {"title": "time"}, "type": "temporal", "field": "Start date"}}, "description": "A simple bar chart with embedded data.", "selection": {"grid": {"bind": "scales", "type": "interval"}}};
+
+   var plot3 = {"data": data, "mark": "point", "$schema": "https://vega.github.io/schema/vega-lite/v2.0.json", "description": "A simple bar chart with embedded data.",
+                "selection": {"grid": {"bind": "scales", "type": "interval"}, "paintbrush": {"type": "multi", "on": "mouseover", "nearest": true}},
+                "encoding": {"color": {"type": "nominal", "field": "Ebola subtype"},
+                             "y": {"type": "quantitative", "field": "Reported number of deaths among cases"},
+                             "x": {"type": "quantitative", "field": "Reported number of human cases"},
+                             "size": {"condition": {"selection": "paintbrush", "value": 300}, "value": 50}}};
+
+  var plot4 = {"data": data, "mark": "circle", "$schema": "https://vega.github.io/schema/vega-lite/v2.0.json", "encoding": {"y": {"type": "nominal", "field": "Country name"}, "color": {"type": "nominal", "field": "Ebola subtype"}, "x2": {"type": "temporal", "field": "End date"}, "x": {"axis": {"title": "time"}, "type": "temporal", "field": "Start date"}, "size": {"aggregate": "average", "type": "quantitative", "field": "Reported number of deaths among cases"}}, "description": "A simple bar chart with embedded data.", "selection": {"grid": {"bind": "scales", "type": "interval"}}};
+
+  // Embed the visualization in the container with id `vis`
+  vega.embed("#vis1", plot1);
+  vega.embed("#vis2", plot2);
+  vega.embed("#vis3", plot3);
+  vega.embed("#vis4", plot4)
+  </script>
+</body>
+</html>
