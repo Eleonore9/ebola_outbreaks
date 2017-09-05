@@ -10,8 +10,7 @@ See [here](https://data.hdx.rwlabs.org/dataset/ebola-outbreaks-before-2014)
 
 ### Using [`Altair`](http://altair-viz.github.io/):
 * Notebook: `try-altair`
-* Generate html:
-* Interactive html:
+* html: `index.html`
 
 ### Old_notebooks
 
