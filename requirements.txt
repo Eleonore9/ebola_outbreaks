@@ -18,7 +18,7 @@ Fiona==1.6.3.post1
 Flask==0.10.1
 folium==0.1.6
 functools32==3.2.3-1
-future==0.14.3
+future==0.18.3
 futures==3.0.5
 geopandas==0.1.1
 gevent==1.0.2
